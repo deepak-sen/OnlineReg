@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{{--Check commit--}}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,7 +45,7 @@
   </nav>
   <!--/ Navigation bar-->
   <!--Modal box-->
-  
+
   <!--/ Modal box-->
   <!--Banner-->
   <div class="banner">
@@ -60,8 +60,8 @@
               @if (session('Status'))
               <p style="color:#48C836;">{{session('Status')}}</p>
               @endif
-              <p class="big-text">Manage, Pay and Register License and Vehicle.</p>             
-              <p class="small-text">We also have provisons for road tax payment, license, bluebook renewal. <br>Click the links below or go through our tabs for our different services.</p>              
+              <p class="big-text">Manage, Pay and Register License and Vehicle.</p>
+              <p class="small-text">We also have provisons for road tax payment, license, bluebook renewal. <br>Click the links below or go through our tabs for our different services.</p>
             </div>
             <a href="#feature" class="mouse-hover">
               <div class="mouse"></div>
@@ -113,9 +113,9 @@
               <div class="fea-img pull-left">
                 <i class="fa fa-money"></i>
               </div>
-               
+
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -199,7 +199,7 @@
       <div class="row">
         <div class="header-section text-center">
           <h2>Notices</h2>
-          
+
           <hr class="bottom-line">
         </div>
       </div>
@@ -243,7 +243,7 @@
               <h3>Notice!!</h3>
               <p>2020/04/12</p>
             </figcaption>
-            
+
           </figure>
         </div>
         <div class="col-md-4 col-sm-6 padleft-right">
@@ -349,7 +349,7 @@
 
       <h3>Our Social Sites</h3>
 
-     
+
       <!-- End newsletter-form -->
       <ul class="social-links">
         <li><a href="https://twitter.com/"><i class="fa fa-twitter fa-fw"></i></a></li>
@@ -359,7 +359,7 @@
       </ul>
       ©2020 Deepak Sen. All rights reserved
       <div class="credits">
-       
+
         Designed by <a href="">Deepak Sen</a>
       </div>
     </div>
