@@ -57,15 +57,16 @@ class LoginController extends Controller
     public function handleProviderCallback()
     {
         $githubUser = Socialite::driver('github')->user();
-     
+
     $findUser = User::where('email',$githubUser->email)->first();
 
     if ($findUser)
     {
       Auth::login($findUser);
       return redirect($this->redirectTo)->with('Status','You are logged in');
-  } 
-  else 
+
+  }
+  else
   {
     $user = User::create([
        'email' => $githubUser->getEmail(),
@@ -76,7 +77,7 @@ class LoginController extends Controller
    ]);
       Auth::login($user, true);
       return redirect($this->redirectTo)->with('Status','You are logged in');
-    
+
 }
 }
 }
