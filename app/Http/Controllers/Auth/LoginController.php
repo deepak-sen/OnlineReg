@@ -56,9 +56,9 @@ class LoginController extends Controller
      */
     public function handleProviderCallback()
     {
-        $githubUser = Socialite::driver('github')->user();
+        $gituser = Socialite::driver('github')->user();
 
-    $findUser = User::where('email',$githubUser->email)->first();
+    $findUser = User::where('email',$gituser->email)->first();
 
     if ($findUser)
     {
@@ -69,9 +69,9 @@ class LoginController extends Controller
   else
   {
     $user = User::create([
-       'email' => $githubUser->getEmail(),
-       'name' => $githubUser->getName(),
-       'provider_id' => $githubUser->getId(),
+       'email' => $gituser->getEmail(),
+       'name' => $gituser->getName(),
+       'provider_id' => $gituser->getId(),
 
 
    ]);
